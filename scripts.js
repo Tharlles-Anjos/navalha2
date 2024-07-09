@@ -13,13 +13,15 @@ document.addEventListener('DOMContentLoaded', function () {
         // Validar os dados (simples exemplo)
         if (name && email && date && time) {
             // Construir a mensagem
-            const message = `Olá, meu nome é ${name}. Gostaria de agendar um horário para ${date} às ${time}. Meu email é ${email}.`;
+            const message = `Olá, meu nome é ${name}.
+             Gostaria de agendar um horário no dia ${date} às ${time}.
+            Meu email é ${email}.`;
 
             // Codificar a mensagem para ser usada em uma URL
             const encodedMessage = encodeURIComponent(message);
 
             // Número de telefone do WhatsApp (substitua pelo número da barbearia)
-            const phoneNumber = '5551999999999'; // Número no formato internacional
+            const phoneNumber = '5593992181392'; // Número no formato internacional
 
             // Construir a URL do WhatsApp
             const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
