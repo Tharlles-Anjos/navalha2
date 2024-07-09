@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (name && email && date && time) {
             // Construir a mensagem
             const message = `Olá, meu nome é ${name}.
-             Gostaria de agendar um horário no dia ${date} às ${time}.
+            Gostaria de agendar um horário no dia ${date}
+            às ${time}.
             Meu email é ${email}.`;
 
             // Codificar a mensagem para ser usada em uma URL
